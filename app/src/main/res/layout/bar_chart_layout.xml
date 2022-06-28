@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/csdasdxa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.goertek.rox2.ui.main.utils.chart.BarChartLayout
+        android:id="@+id/bar_chart_layout12"
+        android:layout_width="600dp"
+        android:layout_height="700dp"
+        />
+</LinearLayout>

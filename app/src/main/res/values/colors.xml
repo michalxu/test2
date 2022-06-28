@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#22A89A</color>
+    <color name="colorPrimaryDark">#1F3F42</color>
+    <color name="colorAccent">#30E7D1</color>
+
+    <color name="color_normal_text">#1F3F42</color>
+    <color name="color_disable_text">#FFD8D8D8</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+
+    <color name="color_draw_text_normal">@color/color_normal_text</color>
+    <color name="color_draw_text_red">#ED0000</color>
+
+    <color name="color_eq_info_text">@color/color_normal_text</color>
+    <color name="color_eq_info_button">#28BCAC</color>
+    <color name="color_eq_item_text">@color/color_normal_text</color>
+
+    <color name="color_vp_background">#4DFFFFFF</color>
+    <color name="color_vp_progress">#FFFFFF</color>
+    <color name="color_vp_disable_background">#4D22A89A</color>
+    <color name="color_vp_disable_progress">#22A89A</color>
+
+    <color name="color_tvp_progress_top">#00FFFFFF</color>
+    <color name="color_tvp_progress_center">#FFFFFFFF</color>
+
+    <color name="color_control_divider_top">#4DFFFFFF</color>
+    <color name="color_control_divider_center">#FFFFFFFF</color>
+    <color name="color_control_background">#4DFFFFFF</color>
+
+    <color name="text_color">#000000</color>
+
+    <color name="color_main_status_bar">#ECECEC</color>
+    <color name="color_main_navigation">#2EE7D3</color>
+    <color name="color_test_status_bar">#2EE7D3</color>
+    <color name="color_test_navigation">#37E7C5</color>
+
+    <!--分隔符颜色-->
+    <color name="color_divider">#FFD8D8D8</color>
+    <drawable name="dialog_press_color">#80F7F7F7</drawable>
+    <color name="colorTextBlack">#FF191919</color>
+    <color name="colorDialogButtonBlue">#FF017DFF</color>
+    <color name="color_progress_blue">#2378F1</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#8a8c8e</color>
+    <color name="light_gray">#558a8c8e</color>
+    <color name="light_blue">#7bbfea</color>
+    <color name="yellowGreen">#b2d235</color>
+    <color name="green">#45b97c</color>
+    <color name="yellow">#ffd400</color>
+    <color name="fleshcolor">#cd9a5b</color>
+    <color name="red">#d71345</color>
+    <color name="pink">#ef5b9c</color>
+    <color name="michal_color">#F5FFFA</color>
+    <color name="michal_color1">#F0FFF0</color>
+    <color name="michal_color2">#CCFFCC</color>
+    <color name="michal_color3">#99FFCC</color>
+    <color name="michal_color4">#FFCC99</color>
+    <color name="michal_color5">#FF9966</color>
+    <color name="transparent">#00808080</color>
+    <color name="light_color">#D3D3D3</color>
+    <color name="text_color_blue">#FF3784F2</color>
+    <color name="text_color_black">#FF091931</color>
+    <color name="text_color_light_black">#FF091931</color>
+    <color name="progress_gradient_color1">#0D091931</color>
+    <color name="progress_gradient_color2">#1A091931</color>
+    <color name="progress_gradient_color3">#36091931</color>
+    <color name="progress_gradient_color4">#53091931</color>
+    <color name="progress_gradient_color5">#76091931</color>
+    <color name="progress_gradient_color6">#89091931</color>
+    <color name="progress_gradient_color7">#CC091931</color>
+    <color name="progress_gradient_color8">#DD091931</color>
+    <color name="progress_gradient_color9">#EE091931</color>
+    <color name="progress_gradient_color10">#FF091931</color>
+    <color name="bar_chart_bar_color_blue">#2378F1</color>
+    <color name="bar_chart_bar_color_blue_end">#B3D2FF</color>
+    <color name="line_chart_line_color_green">#D900C0AD</color>
+    <color name="line_chart_line_color_blue">#2F7FF1</color>
+</resources>

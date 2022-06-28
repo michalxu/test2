@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">twsapp</string>
+
+    <string name="drawer_bluetooth">Bluetooth</string>
+    <string name="drawer_box_battery">Battery</string>
+    <string name="drawer_left_battery">Left Battery</string>
+    <string name="drawer_right_battery">Right Battery</string>
+    <string name="drawer_bluetooth_disconnect">Unconnected</string>
+    <string name="drawer_bluetooth_connecting">Connecting</string>
+    <string name="drawer_bluetooth_connected">Connected</string>
+
+    <string name="eq_bluetooth_disconnect">蓝牙\n已断开</string>
+    <string name="eq_bluetooth_connecting">蓝牙\n连接中</string>
+    <string name="eq_bluetooth_connected">蓝牙\n已连接</string>
+    <string name="eq_low_power_box">Rox Case\nLow Battery</string>
+    <string name="eq_low_power_earbud">Earbuds\nLow Battery</string>
+    <string name="eq_setting">Setting</string>
+    <string name="eq_reset">EQ Reset</string>
+
+    <string name="test_back">返回</string>
+    <string name="test_not_finish">Test is not finish\nDo you want to exit</string>
+
+    <string name="ok">OK</string>
+    <string name="start">START</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+    <string name="test_choose_tip">Choose the ear tip fit you the best</string>
+    <string name="test_about_time">Test is about 2 mins</string>
+    <string name="test_fit_volume">Volume 50%\nANC On</string>
+    <string name="test_left_ear">Left ear</string>
+    <string name="test_right_ear">Right ear</string>
+
+    <string name="test_left_first">Left ear first</string>
+
+    <string name="test_can_you_hear">Can you hear the\nsound?</string>
+
+    <string name="test_audition_contrast">Audition Contrast</string>
+    <string name="test_save_name_place">Give it a name</string>
+    <string name="test_save_send_to">Save &amp; Send to Earbuds</string>
+    <string name="test_save_send">Save &amp; Send</string>
+
+    <string name="eq_control_title">Audition Contrast</string>
+    <string name="eq_control_before">BEFORE</string>
+    <string name="eq_control_after">AFTER</string>
+
+    <string name="toast_connect_first">Please connect device first</string>
+    <string name="toast_eq_set_fail">EQ set fail</string>
+    <string name="toast_eq_get_fail">EQ get fail</string>
+    <string name="toast_eq_reset_success">EQ reset success</string>
+    <string name="toast_eq_reset_fail">EQ reset fail</string>
+    <string name="toast_anc_set_fail">ANC set fail</string>
+    <string name="toast_name_not_contain">There is already an EQ of the same name</string>
+    <string name="_2021"><![CDATA[<2021>]]></string>
+    <string name="jun"><![CDATA[<Jun>]]></string>
+</resources>

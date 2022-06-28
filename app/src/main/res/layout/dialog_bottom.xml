@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_dialog_height"
+    android:background="@drawable/dialog_bottom_background">
+
+    <EditText
+        android:id="@+id/et_dialog_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bottom_edit_text_margin_top"
+        android:layout_marginStart="@dimen/bottom_edit_text_margin_start_end"
+        android:layout_marginEnd="@dimen/bottom_edit_text_margin_start_end"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM_ []."
+        android:ems="20"
+        android:maxLength="20"
+        android:background="@null"
+        android:inputType="text"
+        android:textSize="@dimen/test_fragment_subtitle_size"
+        android:textColor="@color/color_normal_text"
+        android:textColorHint="@color/color_disable_text"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_divider_height"
+        android:layout_marginTop="@dimen/bottom_divider_margin_top"
+        android:layout_marginStart="@dimen/bottom_divider_margin_start_end"
+        android:layout_marginEnd="@dimen/bottom_divider_margin_start_end"
+        android:background="@color/color_divider"/>
+
+    <TextView
+        android:id="@+id/name_exists"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="The name already exists."
+        android:textColor="#FFF93B6E"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="36dp"
+        >
+        <Button
+            android:id="@+id/btn_dialog_bottom_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/michal_save_bg_blue"
+            android:textStyle="bold"
+            android:text="Save"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:paddingLeft="32.5dp"
+            android:paddingRight="32.5dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            />
+        <Button
+            android:id="@+id/btn_dialog_bottom_send_and_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/michal_save_bg_blue"
+            android:textStyle="bold"
+            android:text="Save &amp; Send"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/btn_dialog_bottom_send"
+            android:layout_marginLeft="8dp"
+            android:textAllCaps="false"
+            android:paddingLeft="32.5dp"
+            android:paddingRight="32.5dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

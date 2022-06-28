@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/eq_item"
+    android:padding="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_width="200dp"
+    android:layout_height="96dp"
+    android:orientation="vertical"
+    android:background="@drawable/michal_bg_white"
+    >
+
+    <TextView
+        android:id="@+id/eq_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amay.Li"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/eq_item_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto recommended"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:id="@+id/eq_item_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:background="@drawable/ic_eq_edit_off"
+        />
+
+
+</LinearLayout>

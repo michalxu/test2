@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/spectrum1"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum2"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum3"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum4"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum5"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum6"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum7"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum8"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum9"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum10"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum11"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum12"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum13"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum14"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum15"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum16"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum17"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum18"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum19"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum20"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum21"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum22"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum23"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum24"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum25"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum26"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum27"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum28"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum29"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/spectrum30"
+        android:duration="50"
+        />
+</animation-list>

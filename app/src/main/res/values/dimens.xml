@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--drawer-->
+    <dimen name="drawer_width">280dp</dimen>
+    <dimen name="drawer_earbud_margin_start">65dp</dimen>
+    <dimen name="drawer_earbud_margin_top_bottom">36dp</dimen>
+    <dimen name="drawer_earbud_width">140dp</dimen>
+    <dimen name="drawer_earbud_height">158dp</dimen>
+
+    <dimen name="drawer_item_height">24dp</dimen>
+    <dimen name="drawer_item_margin">30dp</dimen>
+    <dimen name="drawer_item_padding_start_end">20dp</dimen>
+    <dimen name="drawer_item_inner_image_text">12dp</dimen>
+    <dimen name="drawer_item_title">18sp</dimen>
+    <dimen name="drawer_item_subtitle">16sp</dimen>
+
+    <dimen name="drawer_switch_height">32dp</dimen>
+    <dimen name="drawer_switch_width">64dp</dimen>
+    <dimen name="drawer_switch_margin_start">20dp</dimen>
+    <dimen name="drawer_switch_margin_bottom">30dp</dimen>
+
+    <!--main-->
+    <dimen name="main_menu_width">24dp</dimen>
+    <dimen name="main_menu_height">24dp</dimen>
+    <dimen name="main_menu_margin_top">16dp</dimen>
+    <dimen name="main_menu_margin_start">20dp</dimen>
+
+    <dimen name="eq_play_state_height">24dp</dimen>
+    <dimen name="eq_play_state_width">24dp</dimen>
+    <dimen name="eq_play_state_margin_top">16dp</dimen>
+    <dimen name="eq_play_state_margin_start">58dp</dimen>
+
+    <dimen name="eq_info_height">180dp</dimen>
+    <dimen name="eq_info_margin_top">56dp</dimen>
+    <dimen name="eq_info_padding_start_end">20dp</dimen>
+    <dimen name="eq_info_image_height">180dp</dimen>
+    <dimen name="eq_info_image_width">160dp</dimen>
+    <dimen name="eq_info_right_icon_width_height">24dp</dimen>
+    <dimen name="eq_info_right_icon_margin_top">2dp</dimen>
+    <dimen name="eq_info_right_text_margin_top">8dp</dimen>
+    <dimen name="eq_info_right_text_size">24sp</dimen>
+    <dimen name="eq_info_right_button_margin_top">2dp</dimen>
+    <dimen name="eq_info_right_button_image_width_height">16dp</dimen>
+    <dimen name="eq_info_right_button_margin_image_text">4dp</dimen>
+    <dimen name="eq_info_right_button_text_margin_top">6dp</dimen>
+    <dimen name="eq_info_right_button_text_size">17sp</dimen>
+
+    <dimen name="eq_content_margin_top">196dp</dimen>
+    <dimen name="eq_content_indicator_radius">2dp</dimen>
+    <dimen name="eq_content_indicator_normal_length">4dp</dimen>
+    <dimen name="eq_content_indicator_select_length">20dp</dimen>
+    <dimen name="eq_content_indicator_inner_margin">4dp</dimen>
+    <dimen name="eq_content_indicator_margin_top">46dp</dimen>
+    <dimen name="eq_content_indicator_margin_bottom">26dp</dimen>
+    <dimen name="eq_content_recycler_view_margin_bottom">44dp</dimen>
+    <dimen name="eq_content_item_padding_start_end">20dp</dimen>
+    <dimen name="eq_content_item_icon_size">24dp</dimen>
+    <dimen name="eq_content_item_switch_width">40dp</dimen>
+    <dimen name="eq_content_item_icon_inner_margin">20dp</dimen>
+    <dimen name="eq_content_item_text_size">17sp</dimen>
+    <dimen name="eq_content_item_eqv_margin_top">30dp</dimen>
+    <dimen name="eq_content_button_height">50dp</dimen>
+    <dimen name="eq_content_button_width">240dp</dimen>
+    <dimen name="eq_content_button_margin_bottom">35dp</dimen>
+
+    <!--test-->
+    <dimen name="test_back_content_height">44dp</dimen>
+    <dimen name="test_back_content_padding_top">9dp</dimen>
+    <dimen name="test_back_title_size">16sp</dimen>
+    <dimen name="test_fragment_padding_top">44dp</dimen>
+    <dimen name="test_fragment_title_size">26sp</dimen>
+    <dimen name="test_fragment_subtitle_size">18sp</dimen>
+    <dimen name="test_fragment_number_size">28sp</dimen>
+    <dimen name="test_pre_start_image_size">240dp</dimen>
+    <dimen name="test_pre_start_margin_top">35dp</dimen>
+    <dimen name="test_pre_start_first_title_margin_top">32dp</dimen>
+    <dimen name="test_pre_start_second_title_margin_top">10dp</dimen>
+    <dimen name="test_pre_start_button_height">50dp</dimen>
+    <dimen name="test_pre_start_button_width">120dp</dimen>
+
+    <dimen name="test_animation_image_content_height">307dp</dimen>
+    <dimen name="test_animation_earbud_small">120dp</dimen>
+    <dimen name="test_animation_earbud_normal">180dp</dimen>
+    <dimen name="test_animation_earbud_big">220dp</dimen>
+    <dimen name="test_animation_number_margin">110dp</dimen>
+    <dimen name="test_animation_number_size">70dp</dimen>
+
+    <dimen name="test_animation_left_x_start">-30dp</dimen>
+    <dimen name="test_animation_left_y_start">-30dp</dimen>
+    <dimen name="test_animation_right_x_start">30dp</dimen>
+    <dimen name="test_animation_right_y_start">30dp</dimen>
+
+    <dimen name="test_animation_left_x_inner">-19dp</dimen>
+    <dimen name="test_animation_left_y_inner">-20dp</dimen>
+    <dimen name="test_animation_right_x_inner">33dp</dimen>
+    <dimen name="test_animation_right_y_inner">28dp</dimen>
+
+    <dimen name="test_animation_left_x_end">-33dp</dimen>
+    <dimen name="test_animation_left_y_end">28dp</dimen>
+    <dimen name="test_animation_right_x_end">19dp</dimen>
+    <dimen name="test_animation_right_y_end">-20dp</dimen>
+
+    <dimen name="test_test_earbud_margin_top">317dp</dimen>
+    <dimen name="test_test_earbud_margin_bottom">6dp</dimen>
+    <dimen name="test_test_eq_margin_start_end">44dp</dimen>
+    <dimen name="test_test_eq_view_height">80dp</dimen>
+    <dimen name="test_test_msg_margin_top">4dp</dimen>
+    <dimen name="test_test_button_margin_top">27dp</dimen>
+    <dimen name="test_test_button_height">50dp</dimen>
+    <dimen name="test_test_button_width">120dp</dimen>
+    <dimen name="test_test_button_content">85dp</dimen>
+    <dimen name="test_test_button_margin_inner">40dp</dimen>
+
+    <dimen name="test_finish_eq_content_margin_top">51dp</dimen>
+    <dimen name="test_finish_eq_content_height">240dp</dimen>
+    <dimen name="test_finish_eq_content_width">320dp</dimen>
+    <dimen name="test_finish_control_margin_top">28dp</dimen>
+    <dimen name="test_finish_button_height">50dp</dimen>
+    <dimen name="test_finish_button_width">280dp</dimen>
+    <dimen name="test_finish_button_margin_bottom">35dp</dimen>
+
+    <!--EQ Control-->
+    <dimen name="eq_control_text_size">18sp</dimen>
+    <dimen name="eq_control_width">320dp</dimen>
+    <dimen name="eq_control_height">140dp</dimen>
+    <dimen name="eq_control_title_margin_top">20dp</dimen>
+    <dimen name="eq_control_title_margin_bottom">20dp</dimen>
+    <dimen name="eq_control_divider_height">1dp</dimen>
+    <dimen name="eq_control_divider_width">280dp</dimen>
+    <dimen name="eq_control_button_height">48dp</dimen>
+    <dimen name="eq_control_button_width">48dp</dimen>
+    <dimen name="eq_control_icon_height">24dp</dimen>
+    <dimen name="eq_control_icon_width">24dp</dimen>
+    <dimen name="eq_control_arrow_height">16dp</dimen>
+    <dimen name="eq_control_arrow_width">16dp</dimen>
+    <dimen name="eq_control_arrow_button_margin">3dp</dimen>
+    <dimen name="eq_control_arrow_margin_inner">2dp</dimen>
+    <dimen name="eq_control_arrow_text_margin">13dp</dimen>
+
+    <!--竖直进度条-->
+    <dimen name="vp_background_size">1dp</dimen>
+    <dimen name="vp_progress_size">6dp</dimen>
+
+    <!--dialog-->
+    <dimen name="tips_dialog_width">300dp</dimen>
+
+    <!--底部Dialog-->
+    <dimen name="bottom_dialog_height">244dp</dimen>
+    <dimen name="bottom_edit_text_margin_start_end">30dp</dimen>
+    <dimen name="bottom_edit_text_margin_top">50dp</dimen>
+    <dimen name="bottom_divider_height">1dp</dimen>
+    <dimen name="bottom_divider_margin_start_end">20dp</dimen>
+    <dimen name="bottom_divider_margin_top">20dp</dimen>
+    <dimen name="bottom_button_height">50dp</dimen>
+    <dimen name="bottom_button_width">280dp</dimen>
+    <dimen name="bottom_button_margin_top">44dp</dimen>
+</resources>

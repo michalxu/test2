@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/ripple1"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple2"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple3"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple4"
+        android:duration="50"
+    />
+    <item android:drawable="@drawable/ripple5"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple6"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple7"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple8"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple9"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple10"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple11"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple12"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple13"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple14"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple15"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple16"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple17"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple18"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple19"
+        android:duration="50"
+        />
+
+    <item android:drawable="@drawable/ripple20"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple21"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple22"
+    android:duration="50"
+    />
+    <item android:drawable="@drawable/ripple23"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple24"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple25"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple26"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple27"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple28"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple29"
+        android:duration="50"
+        />
+    <item android:drawable="@drawable/ripple30"
+        android:duration="50"
+        />
+
+
+</animation-list>

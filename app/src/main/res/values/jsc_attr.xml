@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="base_what">
+        <enum name="BASE_HORIZONTAL" value="0"/>
+        <enum name="BASE_VERTICAL" value="1"/>
+    </attr>
+    <attr name="aspect_x" format="integer"/>
+    <attr name="aspect_y" format="integer"/>
+
+    <declare-styleable name="JSCBannerView">
+        <attr name="bv_indicator_padding_left" format="dimension"/>
+        <attr name="bv_indicator_padding_right" format="dimension"/>
+        <attr name="bv_indicator_padding_top" format="dimension"/>
+        <attr name="bv_indicator_padding_bottom" format="dimension"/>
+        <attr name="bv_indicator_align">
+            <enum name="ALIGN_LEFT" value="-1"/>
+            <enum name="ALIGN_CENTER" value="0"/>
+            <enum name="ALIGN_RIGHT" value="1"/>
+        </attr>
+        <attr name="bv_view_pager_left_margin" format="dimension"/>
+        <attr name="bv_view_pager_right_margin" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="BaseArcHeaderView">
+        <attr name="ahv_height" format="dimension|reference"/>
+        <attr name="ahv_start_color" format="color|reference"/>
+        <attr name="ahv_end_color" format="color|reference"/>
+        <attr name="ahv_src" format="reference"/>
+        <attr name="ahv_direction">
+            <enum name="downOutSide" value="0"/>
+            <enum name="downInSide" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalStepView">
+        <attr name="vs_line_width" format="dimension|reference" />
+        <attr name="vs_line_color" format="color|reference" />
+        <attr name="vs_draw_circle" format="boolean" />
+        <attr name="vs_draw_index" format="boolean" />
+        <attr name="vs_draw_transit" format="boolean" />
+        <attr name="vs_draw_label" format="boolean" />
+        <attr name="vs_draw_cursor" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MonthView">
+        <attr name="mv_show_sub_label" format="boolean" />
+        <attr name="mv_row_space" format="dimension|reference" />
+        <attr name="mv_column_space" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="JSCRoundCornerProgressBar">
+        <attr name="rc_background_color" format="color|reference" />
+        <attr name="rc_progress_color" format="color|reference" />
+        <attr name="rc_second_progress_color" format="color|reference" />
+        <attr name="rc_max" format="integer" />
+        <attr name="rc_progress" format="integer" />
+        <attr name="rc_second_progress" format="integer" />
+        <attr name="rc_text" format="string|reference" />
+        <attr name="rc_text_color" format="color|reference" />
+        <attr name="rc_text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RefreshLayout">
+        <attr name="rf_headerLayout" format="reference"/>
+        <attr name="rf_contentLayout" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="JSCItemLayout">
+        <!--left icon -->
+        <attr name="il_icon" format="reference"/>
+        <!-- label -->
+        <attr name="il_label" format="string"/>
+        <!-- value -->
+        <attr name="il_value" format="string"/>
+        <!-- show dot view or not -->
+        <attr name="il_showDot" format="boolean"/>
+        <attr name="il_dotSize" format="dimension"/>
+        <!-- right arrow icon -->
+        <attr name="il_arrowIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="VScrollScreenLayout">
+        <attr name="vssl_y_slide_ratio" format="float"/>
+        <attr name="vssl_flip_ratio" format="float"/>
+        <attr name="vssl_rebound_anim_time" format="integer"/>
+        <attr name="vssl_flip_anim_time" format="integer"/>
+        <attr name="vssl_default_page_index" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadarView">
+        <attr name="rv_start_angle" format="integer" />
+        <attr name="rv_layer_count" format="integer" />
+        <attr name="rv_layer_style" >
+            <enum name="stroke" value="0"/>
+            <enum name="fill" value="1"/>
+        </attr>
+        <attr name="rv_layer_color" format="color|reference" />
+        <attr name="rv_layer_stroke_width" format="dimension" />
+        <attr name="rv_output_color" format="color|reference" />
+        <attr name="rv_vertex_show" format="boolean"/>
+        <attr name="rv_vertex_color" format="color|reference" />
+        <attr name="rv_vertex_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_color" format="color"/>
+        <attr name="rv_mini_radius" format="dimension"/>
+        <attr name="rv_radius_step" format="dimension"/>
+        <attr name="rv_repeat_count" format="integer"/>
+        <attr name="rv_auto_run_on_attached" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioFrameLayout">
+        <attr name="base_what"/>
+        <attr name="aspect_x"/>
+        <attr name="aspect_y"/>
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioLinearLayout">
+        <attr name="base_what"/>
+        <attr name="aspect_x"/>
+        <attr name="aspect_y"/>
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioImageView">
+        <attr name="base_what"/>
+        <attr name="aspect_x"/>
+        <attr name="aspect_y"/>
+    </declare-styleable>
+
+    <declare-styleable name="CameraMask">
+        <!--相机镜头（或扫描框）大小占View宽度的百分比-->
+        <attr name="cm_sizeRatio" format="float|reference"/>
+        <!--相机镜头（或扫描框）形状-->
+        <attr name="cm_maskShape">
+            <!--正方形-->
+            <enum name="square" value="0"/>
+            <!--圆形-->
+            <enum name="circular" value="1"/>
+        </attr>
+        <!--相机镜头遮罩颜色-->
+        <attr name="cm_maskColor" format="color|reference"/>
+        <!--扫描框边的颜色-->
+        <attr name="cm_scannerBoxBorderColor" format="dimension"/>
+        <!--扫描框边的粗细-->
+        <attr name="cm_scannerBoxBorderWidth" format="dimension"/>
+        <!--扫描框四个角的颜色-->
+        <attr name="cm_scannerBoxAngleColor" format="dimension"/>
+        <!--扫描框四个角边的粗细-->
+        <attr name="cm_scannerBoxAngleBorderWidth" format="dimension"/>
+        <!--扫描框四个角边的长度-->
+        <attr name="cm_scannerBoxAngleLength" format="dimension"/>
+        <!--相机镜头（或扫描框）与顶部的间距-->
+        <attr name="cm_topMargin" format="dimension"/>
+        <!--提示文字-->
+        <attr name="cm_text" format="string|reference"/>
+        <!--提示文字颜色-->
+        <attr name="cm_textColor" format="color|reference"/>
+        <!--提示文字字体大小-->
+        <attr name="cm_textSize" format="dimension"/>
+        <!--提示文字是否填充View的宽度。true与View等宽，false与相机镜头（或扫描框）等宽。-->
+        <attr name="cm_textSingleLine" format="boolean|reference"/>
+        <!--提示文字位于相机镜头（或扫描框）上方（或下方）-->
+        <attr name="cm_textLocation">
+            <!--提示文字位于相机镜头（或扫描框）下方-->
+            <enum name="belowCameraLens" value="0"/>
+            <!--提示文字位于相机镜头（或扫描框）上方-->
+            <enum name="aboveCameraLens" value="1"/>
+        </attr>
+        <!--提示文字与相机镜头（或扫描框）的间距-->
+        <attr name="cm_textVerticalMargin" format="dimension"/>
+        <!--提示文字与View（或相机镜头或扫描框）的左间距-->
+        <attr name="cm_textLeftMargin" format="dimension"/>
+        <!--提示文字与View（或相机镜头或扫描框）的右间距-->
+        <attr name="cm_textRightMargin" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalStepLinearLayout">
+        <!--竖线的颜色-->
+        <attr name="vsll_lineColor" format="color"/>
+        <!--序列号背景圆颜色-->
+        <attr name="vsll_indexColor" format="color"/>
+        <!--序列号背景圆半径-->
+        <attr name="vsll_indexRadius" format="dimension"/>
+        <!--序列号字体颜色-->
+        <attr name="vsll_indexTextColor" format="color"/>
+        <!--序列号字体大小-->
+        <attr name="vsll_indexTextSize" format="dimension"/>
+        <!--序列号展示位置-->
+        <attr name="vsll_location">
+            <!--在左边展示-->
+            <enum name="left" value="0"/>
+            <!--在右边沾水-->
+            <enum name="right" value="1"/>
+        </attr>
+        <!--序列号滑动时排序位置-->
+        <attr name="vsll_sortBase">
+            <!--从顶部开始排序-->
+            <enum name="top" value="0"/>
+            <!--从第一个序列号开始排序-->
+            <enum name="first" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AverageLayout">
+        <attr name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ReboundLinearLayout">
+        <attr name="reboundOrientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+<!--    <declare-styleable name="RoundProgressBar">-->
+<!--        <attr name="roundColor" format="color" />-->
+<!--        <attr name="roundProgressColor" format="color" />-->
+<!--        <attr name="roundWidth" format="dimension"></attr>-->
+<!--        <attr name="textColor" format="color" />-->
+<!--        <attr name="textSize" format="dimension" />-->
+<!--        <attr name="max" format="integer"></attr>-->
+<!--        <attr name="textIsDisplayable" format="boolean"></attr>-->
+<!--        <attr name="style">-->
+<!--            <enum name="STROKE" value="0"></enum>-->
+<!--            <enum name="FILL" value="1"></enum>-->
+<!--        </attr>-->
+<!--    </declare-styleable>-->
+
+</resources>

@@ -1,0 +1,12 @@
+<?xmlversion="1.0"encoding="utf-8"?>
+<litepal>
+    <dbname value="Rox2DataBase"></dbname>
+    <version value="12"></version>
+    <list>
+        <mapping class = "com.goertek.db.bean.EQTable"></mapping>
+        <mapping class = "com.goertek.db.bean.HearingTable"></mapping>
+        <mapping class = "com.goertek.db.bean.HeartRateTable"></mapping>
+
+    </list>
+
+</litepal>
