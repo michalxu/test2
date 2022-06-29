@@ -1,0 +1,16 @@
+Lyratone APP SDK for Android 
+version: v1.0.22.210913
+运行环境：安卓4.4（Android SDK 19） 以上
+
+变更说明：
+	1.MPI设置支持16个参数和12个参数的兼容适配。
+	2.数据加密处理与耳机侧对齐。
+				
+库文件包括（13个）：
+	LyratoneSDK.jar（Android Java层调用库）
+	libc++_shared.so、libapmapi.so和libtestFitting.so（arm64-v8a 环境的底层处理库）
+	libc++_shared.so、libapmapi.so和libtestFitting.so（armeabi-v7a 环境的底层处理库）
+	libc++_shared.so、libapmapi.so和libtestFitting.so（x86 环境的底层处理库）
+	libc++_shared.so、libapmapi.so和libtestFitting.so（x86_64 环境的底层处理库）
+
+	

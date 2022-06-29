@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/lt_radio_btn"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/lt_radio_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="LT" />
+
+                <RadioButton
+                    android:id="@+id/lx_radio_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="LX" />
+
+                <RadioButton
+                    android:id="@+id/typec_radio_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Type-C" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_start_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始测听" />
+
+            <EditText
+                android:id="@+id/txt_db_spl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="number"
+                android:text="40" />
+
+            <Button
+                android:id="@+id/btn_vol_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音量增" />
+
+            <Button
+                android:id="@+id/btn_vol_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音量减" />
+
+            <Button
+                android:id="@+id/btn_stop_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停止测听" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_decibel"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#00BCD4"
+                android:text="当前环境音" />
+
+            <EditText
+                android:id="@+id/txt_spl_offset"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/txt_decibel2"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="#B24CAF50"
+                android:text="调整后分贝" />
+
+            <Button
+                android:id="@+id/btn_noise_meter"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="环境音检测" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_audiometryDataL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="#03A9F4"
+                    android:text="左耳听力数：" />
+
+                <EditText
+                    android:id="@+id/txt_ad_l_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="3"
+                    android:text="90" />
+
+                <EditText
+                    android:id="@+id/txt_ad_l_1k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="3"
+                    android:text="90" />
+
+                <EditText
+                    android:id="@+id/txt_ad_l_2k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="3"
+                    android:text="90" />
+
+                <EditText
+                    android:id="@+id/txt_ad_l_4k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="3"
+                    android:text="90" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_audiometryDataR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="#F44336"
+                    android:text="右耳听力数：" />
+
+                <EditText
+                    android:id="@+id/txt_ad_r_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="3"
+                    android:text="90" />
+
+                <EditText
+                    android:id="@+id/txt_ad_r_1k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="3"
+                    android:text="90" />
+
+                <EditText
+                    android:id="@+id/txt_ad_r_2k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="3"
+                    android:text="90" />
+
+                <EditText
+                    android:id="@+id/txt_ad_r_4k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="3"
+                    android:text="90" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_set_am_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置听力图数据" />
+
+            <TextView
+                android:id="@+id/txt_hl_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="界面展示用听力数据：" />
+
+            <Button
+                android:id="@+id/btn_get_wdrc_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取耳机侧用的WDRC数据" />
+
+            <EditText
+                android:id="@+id/txt_wdrc_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
