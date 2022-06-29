@@ -996,7 +996,7 @@ public class MainActivity extends BaseActivity implements NotifyListener {
 
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 101&& resultCode == RESULT_OK){
             dialog.show();
