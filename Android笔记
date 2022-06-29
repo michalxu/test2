@@ -1,0 +1,248 @@
+Android架构分为四层：
+	Linux内核层，系统运行库层，应用框架层，应用层
+	Linux内核层主要为android的硬件设备提供底层驱动
+	应用框架层主要提供了构建应用程序用到的各种API
+Android系统四大组件
+	活动Activity 服务Service 广播接收器 Broadcast Receiver 内容提供器 Content Provider
+	活动是应用的门面，所有在应用中能见到的东西都放在活动中
+	通过广播接收器，你的应用能通过广播接收到各种广播消息
+	
+Android通过不同的包名区分不同的应用
+
+Android目录
+	主要操作是APP目录
+	APP下的目录有：
+		build：程序编译自动生成
+		lib：第三方的jar包存放到这个目录，程序会自动添加到架构里
+		java：我们编写的所有代码就存在这
+		res：项目中使用到的图片，布局，字符串都放在这
+			图片放在drawable目录下
+			布局放在layout目录下
+			字符串放在value目录下
+		AndroidManifest.xml:整个项目的配置文件，程序中定义的四大组件都需要在这注册
+		
+		
+	活动
+		Activity是一个应用程序组件，提供一个屏幕，用户可以用来交互为了完成某项任务。
+		在一个android应用中，一个Activity通常就是一个单独的屏幕，它上面可以显示一些
+		控件也可以监听并处理用户的事件做出响应。
+	
+	
+	
+	添加按键
+		1、在layout中添加一个按键,设置按键的属性
+		<Button
+			id
+			text
+			width
+			higth
+		2、在活动中加载布局
+			在MainAcitivty中的onCreat方法中调用setContentView(R.layout.activity_main)      
+                                                //R.layout.activity_main是layout的名字
+		3、在AndroidManifest中注册
+	
+	在活动中使用toast
+		toast是弹出一个小消息框，在屏幕中显示一段时间后自动消失
+		1、在onCreat方法中添加toast触发事件
+			private Button button1;
+			button1 = findViewById(R.id.button1);
+			button1.setOnClickListener(new View.OnClickListener(){
+				public void OnClick(View view){
+					Toast.makeText(MainActivity.this,"Click Button1",Toast.LENGTH_LONG).show();
+				}
+			})
+			
+	在活动中使用Menu
+		1、在layout里面创建menu文件夹及menu source文件
+		2、在menu文件中添加菜单项目
+			<item id  title
+		3、在MainAcitivty中重写onCreateOptionsMenu()方法
+			public boolean onCreateOptionsMenu(Menu menu) {
+				getMenuInflater().inflater(R.menu.menu1,menu);
+				return super.onCreateOptionsMenu(menu);
+			}
+		4、添加menu中项目点击
+			重写onOptionsItemSelected()方法
+			public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+				switch (item.getItemId()){
+					case R.id.AddFile:{
+						Toast.makeText(MainActivity.this,"AddFile Clicked",Toast.LENGTH_LONG).show();
+						break;
+					}
+					case R.id.RemoveFile:{
+						Toast.makeText(MainActivity.this,"RemoveFile Clicked",Toast.LENGTH_LONG).show();
+						break;
+					}
+				}
+			return super.onOptionsItemSelected(item);
+			}
+	intent的使用
+		1、新建一个activity SecondActivity
+		2、对SecondActivity进行布局
+		3、调用intent
+			Intent intent1 = new intent(MainActivity.this,SecondActivity.class);  //表示从第一个活动切换到第二个
+			startActivity(intent1);
+			
+		4、隐式调用intent
+			Intent intent2 = new intent(ACTION);            //"ACTION"是SecondActivity里设置的action
+			startActivity(intent2);
+		
+		5、在活动之间传递数据
+			切换的前活动
+			Intent intent3 = new Intent(MainActivity.this,SecondActivity.class);
+			intnet3.putExtra("Data","hello world");
+			startActivity(intent3);
+			切换的后活动
+			Intent intent = getIntent();
+			String Data = intent.getStringExtra("Data");
+			log.d(SecondActivity,data);
+	销毁活动
+		finsh();
+	活动的生命周期
+		活动的状态有：
+			运行状态：活动位于返回栈的栈顶，
+			暂停状态：活动不位于栈顶，但部分可见
+			停止状态：活动不位于栈顶，完全不可见
+			销毁状态：活动被销毁
+		活动的回调函数：
+			onCreate()活动第一次创建的时候调用
+			onStart():活动由不可见变为可见的时候调用
+			onResume():活动准备好与用户进行交互，活动需处于栈顶
+			onPause():活动准备启动或恢复另一个活动的时候调用
+			onStop():活动处于完全不可见的时候调用
+			onDestory():活动被销毁前调用
+			onRestart():活动由停止状态转向运行状态
+		防止活动销毁时，活动的数据被清除，可以使用onSaveInstanceState()方法来保存数据
+			活动被销毁前会调用onSaveInstanceState()方法
+			public void onSavedInstanceState(Bundle outState){
+				super.onSavedInstanceState(outState);
+				String TmpData = "Something you just typed";
+				outState.putString("data",TmpData);
+			
+			}
+			if(SavedInstanceState!=null){
+					String TmpData = savedInstanceState.getString("data");
+			}
+			
+		随时退出一个活动
+			使用集合暂存活动，创建活动的时候存到集合，销毁活动
+			
+			
+	textView
+		gravity="center";             		//center 表示水平和垂直都居中对齐
+		
+		textSize=“24sp”                     //文字大小为24dps
+		textColor=“#00ff00”                  
+		
+	EditText
+		允许用户在控件里输入内容
+		hint=“Type somthing here”            //显示提示文本，有内容输入后消失
+		maxLines=“4”                        //最多显示4行，多了可以往上滑动
+		String inPut = edittext.getText().toString();//获取EditText中输入的内容
+		
+	imageView
+		src = “@drawable/img1”                //在layout中加载图片
+		image.setImageResource(R.drawable.img2)//在程序中设置图片
+		图片需放在   drawable-xhdpi目录中
+		
+	PrograssBar     在界面上显示一个进度条
+		所有控件都有的可见属性
+		visible     控件可见
+		invisible   控件不可见，但占用空间
+		gone        控件不可见，且不占用空间
+		view.setVisibility(view.gone)  //程序中设置可见属性
+		view.getVisibility()            //程序中获取可见状态
+	AlterDialog     在当前界面弹出一个对话框
+		
+	4种常用布局
+	
+		LinearLayout线性布局  包含的控件在线性放下上一次排列
+			orientation = “vertical”         //垂直方向排列
+			orientation = "horizontal"       //水平方向排列
+			layout_gravity = "right"         //在控件中设置，表示控件在布局中采用右对齐
+			
+			
+			
+		RelativeLayout相对布局 相对控件的位置布局
+			layout_alignParaentTop="True"	 //在父布局的上侧
+			layout_alignParaentRight="True"  //在父布局的右侧      两句连用，在右上方
+			layout_toLeftof="@id1" 			 //在兄弟组件id1的左侧
+		FramLayout帧布局       所有控件默认摆在左上角
+			layout_gravity="right"			//右对齐
+		PercentRelativeLayout  百分比布局指定控件在布局中所占百分比
+		PercentFrameLayout
+			使用百分比布局需要先在build.gradle中添加百分比库依赖
+			在depandencies{
+					complie ’com.android.suport:percent:24.2.1‘
+				}
+			<android.suport.percent.PercentRelativeLayout
+				<Button
+					layout_widthPercent="50%"
+					layout_hightPercent="50%"
+				/>
+	View是android最基本的组件，可以在屏幕上绘制一个矩形区域并能响应这个区域的各种事件
+	ViewGroup继承自View，是一种特殊的View，可以包含很多子View和子GroupView，是一个放置控件和布局的容器
+	
+	引入布局
+		如果在很多个活动的布局中都有一些共同的标题栏代码，可以引用布局
+		新建一个title.xml,对title.xml进行布局
+		在另一个layout中引用布局，布局需要控制大小，
+		
+	自定义控件
+		如果一个控件被多个活动调用，且功能相同，则可以自定义控件
+		新建TitleLayout继承自LinearLayout，让它成为我们的自定义控件
+	ListView 允许用户通过手指滑动屏幕，将屏幕外的数据滑动到屏幕内，同时会将屏幕内的数据滑动出屏幕
+		<ListView	
+			id="@id/list_view"
+			layout_width="match_parent"
+			layout_hight="match_parent"
+		/>
+		在MainActivity中添加代码
+			private String[]data={"apple","banana","orange","pear"}
+			protectd void onCreate(){
+				...
+				ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+					MainActivity.this,android.R.layout.simple_list_item_1,data);      //上下文，ListView子项布局的ID，要适配的数据
+				ListView listview = findViewById(R.id.list_view);
+				listview.setAdapter(adapter);
+			}
+	RecyclerView  滚动控件 
+		需要在build.gradle中添加依赖库
+		dependencies{
+			'com.android.suport:recyclerview-v7:24.2.1'
+		}
+		<android.suprot.v7.widget.RecycleView
+			id="@+id/recyclerview"
+			layout_width="match_parent"
+			layout_hight="match_parent"
+		/>
+	background 可对布局或控件指定一个背景，用颜色或图片填充
+		
+
+
+
+
+	ScrollView 滚动视图  当在一个屏幕的像素显示不下绘制的UI控件时，可以采用滑动的方式，使控件显示。
+
+			
+	android:padding和android:margin的区别		
+	安卓的view是一块矩形区域，padding是内边距，就是view（里面的内容）永远都至少和边界有一段设定好的距离。
+	margin是外边距，就是外面的view无法完全靠近这个view的边界，至少要间隔一段设置好的距离。
+			
+	view.post用来获取view的宽高
+	mTextView.post(new Runnable() {
+ 
+            @Override
+            public void run() {
+                // 下面这一行log打印的是TextView测量后的宽高
+                Log.d("test", "mTextView width : " + mTextView.getMeasuredWidth() + " - height : " + mTextView.getMeasuredHeight());
+            }
+        });
+			
+			
+	昨天主要学了EditText，ListView，PrograssBar，AlterDialog，引入布局和自定义控件，完成了任务的主要功能，
+	但是任务还有一个小问题，问题直接无法用矩形框隔开，今天我将完成它，
+			
+			
+			
+		

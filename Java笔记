@@ -1,0 +1,359 @@
+接口定义
+[修饰列表] interface [接口名]
+public interface Animal{
+	void move();
+	int age;
+}
+
+接口支持多继承，一个接口可以继承多个接口
+但是普通类，一个类只能继承一个类，一个类可以被多个类继承
+接口中的内容只有两类，抽象方法和常量；
+
+
+接口中抽象方法的定义
+    public abstract void move();
+    int getAge();
+	
+可以省略前面的public abstract;
+
+
+interface 中所有元素都是公开（public）； public abstract省略
+
+
+接口的继承                                
+class Fish implements Animal{            //使用implements
+	public void move(){                  //需要重写，加public
+		System.out.println("move");
+	}
+}
+
+
+定义常量
+    public static final double  PI = 3.14;
+使用常量
+	Fish mike = new Fish(12);
+	a=Fish.PI;
+
+
+String类
+	字符串可以使用‘+’进行连接，但是每次都会新建一个字符串对象
+	String s = "";
+    for(int i = 0; i < 10; i++){
+        s = s + "," + i;
+    }
+	
+
+StringBuilder
+java定义了一个可变字符串对象StringBuilder,新增字符时不会创建新对象
+	StringBuilder s = new StringBuilder(); //需要先创建一个StringBuilder对象
+	s.append("hello")               //在s中增加字符串
+        .append(",")                //append方法，在s后增加字符串
+        .append("world");
+    String s1 = s.toString();       //将StringBuilder对象转换成字符串
+	s.insert(5,",my,");             //在s第五位字符后加字符串
+	
+	
+	将字符串数组按“，”分隔连接成字符串
+	String[] fields = {"name", "position", "salary" };
+	String s = String.join(",",fields);
+	
+
+StringJoiner
+	StringJoiner,  构造一个由分隔符（“，”等）分隔的序列，可以选择前缀后缀
+	StringJoiner s = new StringJoiner(" ", "", "!!");
+	s.add("i").add("will").add("kiss").add(you);
+	System.out.println(s.toString());
+	
+	
+	引用类型(对象)可以赋值为空，但是基本类型不能赋值为空
+	
+	String s = null;                 //ok
+	int i = null;                   //error
+	
+	
+包装类
+
+Integer类
+	Integer a = new Integer(45);      //新建Integer类，需要赋值
+    int b = a.intValue();
+Boolean
+	Boolean d = new Boolean(true);
+	boolean s = d.booleanValue();
+Byte
+Short
+Integer
+Long
+Float
+Double
+Character 
+
+	
+Auto Boxing 包装类和基本类型可以自动相互转换
+	Integer a = 12；
+	int b = a.intValue();
+
+包装类型都是不变类，进行比较时不能用“==”，需要用“equals（）”
+
+
+Integer类的方法
+	parseInt()    将字符串解析成一个整数
+	int a = Integer.parseInt("13");
+	
+
+枚举类型 enum
+	方法返回值只有两种情况建议使用boolean类型
+	开发过程中，方法返回值可能有多种类型，但是种类是有限的
+	这种情况下就可以使用枚举类型，列举出可能出现的结果
+	
+	枚举也是一种引用数据类型，生成class文件
+	枚举中的每一个值都是常量
+	switch支持枚举类型，String，int等类型
+public enum Result{
+	SUCCESSS，FAIL;
+}
+
+
+Math类
+
+求绝对值    //Math.abs
+	int i=Math.abs(-12);
+	
+求最大最小值//Math.max,Math.min
+	int i = Math.max(1,5);   //只能判断两个数的大小
+	int a = Math.min(2,54);
+
+求次方      //Math.pow
+	int c = Math.pow(2.0,6.0);//输入输出参数都能是double类型
+	
+求开方      //Math.sqrt        //输入输出参数都是double类型
+	double d = Math.sqrt(5);
+
+求e的次方    //Math.exp
+	double e = Math.exp(3);
+	
+求e的对数    //Math.log
+	double d = Math.log(4);
+	
+求以10为底的对数//Math.log10() //10不能变，其他对数不成立
+     double d = Math.log10(7);
+	
+求三角函数    //math.sin(),Math.cos()
+
+数学常量
+	Math.PI   Math.E
+	
+生成随机数   范围在0~1
+	Math.random()
+
+创建伪随机数   //Random方法
+	Random r = new Random();
+	r.nextInt(10);//生成一个0~10之间的数
+	r.nextFloat();生成一个0~1之间的float，无法改变区间
+	r.nextDouble();生成一个0~1之间的double
+	
+	
+异常
+	error 严重的错误，程序对此无能为力                        //error是不能处理的， 程序只能停止执行，退出虚拟机
+		OutOfMemoryError 内存耗尽
+		NoClassDefFoundError 无法找到某个类
+		StackOverflowError   栈溢出
+	exception 运行时的错误，可以被捕获并出来
+		NumberFormatException 数值类型的格式错误
+		FileNotFoundException 未找到文件
+		SocketException      读取网络失败
+	exception又分为两类：                                      //RunTimeException是运行时异常，非RunTimeException是编译时异常
+			RuntimeException和非RuntimeException               //编译时异常是编写程序阶段必须预先处理的异常，如果不处理会出现编译错误 
+	必须捕获的异常包括Exception及其子类但不包括RunTimeException
+	
+	不管是error还是exception都是可抛出的
+	
+	
+	
+	
+	Java对异常的处理方式有两种：
+		在方法声明的位置使用throw关键字，抛给上一级
+		使用try   catch 进行捕捉
+		异常如果一直上抛，最终抛给main、方法，最终main抛给JVM，JVM会终止程序
+		
+
+捕获异常
+	try{
+		//写可能出现异常的代码
+	}catch
+		
+抛出异常
+	static void process1(int age) {
+		if (age <= 0) {
+			throw new IllegalArgumentException();
+		}
+	}
+	
+异常的常用方法
+	getMessage()    //获取异常简单信息
+	printStackTrace()     //打印异常堆栈追踪信息
+	
+	FileNotFound e =new FileNotFound();
+	e.getMseeage();
+	e.printStackTrace();
+	
+finally语句
+	finally 是最后执行的，并且一定会执行的，即使try出现异常也会执行
+	finally语句必须和try一起使用
+	如果有一个语句不管有没有发生异常都要执行，那么可以使用finally语句
+	finally语句常用于释放或关闭资源
+	
+
+自定义异常
+	第一步：编写一个继承类，Exception或非Exception
+	第二步：写两个构造方法，一个有参一个无参
+	class MyException extends Exception{
+		public MyException(){
+		}
+		public MyException(String s){
+			super(s);
+		}
+	}
+自定义异常的使用
+	class Cat{
+		public int position;
+		public Cat(int position){
+			this.position=position;
+		}
+		public void CatMove() throws MyException{    //如果有人调研CatMove,需要处理异常
+			position--;
+			if(position<0){
+				throw new MyException("将要碰壁")；
+			}
+			System.out.println("Cat Move");
+			
+		}
+	}
+	public class Main{
+		public static void main(String[] args){
+			Cat tom = new Cat(5);
+			try{
+				tom.CatMove();
+			}catch(MyException e){
+				e.printStackTrace();
+			}
+			
+		}
+	} 
+	
+	
+	
+	
+	
+	
+	
+	
+	我昨天复习了前天学习的内容，然后学习了Java，包括枚举类，StringBuilder，Stringjoiner，Math类和异常
+	
+	
+	
+静态方法
+	一个类中定义了静态方法，那么，在这个静态方法中不能直接访问本类的实例字段，可以访问静态字段
+	静态方法里面不能调研本类的非静态函数，但可以调研其他类的非静态函数
+	clas A{
+		public int a;
+		public stastic int c;
+		public void b(){
+			c = 12;         //ok
+			a = 12;       //error
+			
+			A test = new A();
+			A.a = 12;      //error
+			
+			B test = new B();
+			B.x=12;         //ok
+		}
+	}
+	
+
+集合
+	java.util提供了集合类collection，主要有三种集合类，List,Map,Set
+	collection是除了map以外的所有集合类的根接口
+	
+	java集合存储方式有两种，一种是单个存放的，另一种是以键值对的方式存放的
+	Collection是单个存放的父接口，Map是键值对存放的父接口
+	
+	集合相当于一个容器，可以容纳其他类型的数据，可以一次容纳多个对象
+	如果要查询10条数据，程序会将10条数据封装成10个对象，然后将10个对象放到一个集合中，
+	程序将集合传到前端，前端将数据一条一条的读出来
+	
+	集合中不能存基本数据，也不能存储java对象，只能存储对象的内存地址，或者说是对象的引用
+	
+	使用不同的集合相当于使用了不同的数据结构
+	选择不同的集合相当于选择不同的数据结构，我们不需要想怎么实现数据结构
+	
+	Collection,List,Set,Map都是接口；
+	List的特点是：
+		存放的数据有序可重复，有下标
+		
+	Set的特点：
+		存放的数据无序不可重复，无下标
+		
+	Map的特点：
+		以键值对方式存储数据，Key存放无序不可重复
+	List中主要的类有：
+		ArrayList，LinkedList，Vector
+	
+	Set中主要的类是：
+		HashSet，TreeSet
+	
+	Map的主要类：
+		HashMap，TreeMap，Properties
+		
+	new ArrayList();       //创建一个集合对象，底层是数组
+	new Linkedlist();       //创建一个集合对象，底层是链表
+	new TreeSet();        //创建一个集合对象，底层是二叉树
+	
+	
+collect常用方法
+	boolean add();               //向集合中添加元素
+	collection c = new ArrayList();   //collection无法创建对象，只能通过子类ArrayList向上转型
+	c.add(12);                    //自动装箱，integer x = Integer(12); 实际加入的是x的内存地址 
+	int size();                   //获取集合中元素的个数
+	int number = c.size();       
+	void clear();              //清空集合
+	boolean contains();           //判断集合中是否包含某个元素
+	void remive();                //移除一个元素
+	
+	c.contains(12);                //True
+	c.remove(12);
+	c.clear();
+	
+	
+	迭代器   iterator            //能够逐一遍历集合中的元素
+	iterator it = c.iterator();  //必须使用c.iterator,不能new iterator
+	it.hasNext();                //判断集合中是否还有元素没有迭代
+	object boj = it.next();      //迭代器指向集合中的元素，返回object对象。
+	                             //存进去什么类型，取出来还是什么类型
+								 
+	while(it.hasnext()){
+		object obj = it.next();
+		System.out.println(obj);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
