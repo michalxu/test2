@@ -48,13 +48,12 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_marginTop="10dp"/>
+
             <include
                 android:id="@+id/box_charge"
                 layout="@layout/michal_layout_charge"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_below="@id/right_charge"
-                android:layout_marginTop="10dp"/>
+                android:layout_height="wrap_content" />
 
             <ImageView
                 android:id="@+id/michal_iv_right"

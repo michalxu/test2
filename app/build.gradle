@@ -54,4 +54,6 @@ dependencies {
     implementation files('libs/LyratoneSDK.jar')
     implementation 'org.litepal.android:java:3.0.0'
     implementation 'com.google.code.gson:gson:2.8.4'
+    //屏幕适配
+    implementation 'me.jessyan:autosize:1.1.2'
 }
