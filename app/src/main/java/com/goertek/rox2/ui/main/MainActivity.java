@@ -26,6 +26,7 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.github.mikephil.charting.data.BarEntry;
 import com.goertek.bluetooth.link.function.ConnectState;
 import com.goertek.bluetooth.protocol.ProtocolAPI;
@@ -440,10 +441,12 @@ public class MainActivity extends BaseActivity implements NotifyListener {
                         @Override
                         public void onSuccess(byte[] object) {
                             if (object[4]==0x00){
-                                adaptiveImage.setImageResource(R.drawable.ic_mode_1_on);
+//                                adaptiveImage.setImageResource(R.drawable.ic_mode_1_on);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_1_on).into(adaptiveImage);
                                 adaptiveText1.setTextColor(getResources().getColor(R.color.text_color_blue));
                                 adaptiveText2.setTextColor(getResources().getColor(R.color.text_color_blue));
-                                stableImage.setImageResource(R.drawable.ic_mode_2_off);
+//                                stableImage.setImageResource(R.drawable.ic_mode_2_off);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_2_off).into(stableImage);
                                 stableText1.setTextColor(getResources().getColor(R.color.text_color_black));
                                 stableText2.setTextColor(getResources().getColor(R.color.text_color_black));
                             }
@@ -455,10 +458,12 @@ public class MainActivity extends BaseActivity implements NotifyListener {
                         }
                     });
                 }else {
-                    adaptiveImage.setImageResource(R.drawable.ic_mode_1_on);
+//                    adaptiveImage.setImageResource(R.drawable.ic_mode_1_on);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_1_on).into(adaptiveImage);
                     adaptiveText1.setTextColor(getResources().getColor(R.color.text_color_blue));
                     adaptiveText2.setTextColor(getResources().getColor(R.color.text_color_blue));
-                    stableImage.setImageResource(R.drawable.ic_mode_2_off);
+//                    stableImage.setImageResource(R.drawable.ic_mode_2_off);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_2_off).into(stableImage);
                     stableText1.setTextColor(getResources().getColor(R.color.text_color_black));
                     stableText2.setTextColor(getResources().getColor(R.color.text_color_black));
                 }
@@ -477,10 +482,12 @@ public class MainActivity extends BaseActivity implements NotifyListener {
                         @Override
                         public void onSuccess(byte[] object) {
                             if (object[4]==0x00){
-                                adaptiveImage.setImageResource(R.drawable.ic_mode_1_off);
+//                                adaptiveImage.setImageResource(R.drawable.ic_mode_1_off);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_1_off).into(adaptiveImage);
                                 adaptiveText1.setTextColor(getResources().getColor(R.color.text_color_black));
                                 adaptiveText2.setTextColor(getResources().getColor(R.color.text_color_black));
-                                stableImage.setImageResource(R.drawable.ic_mode_2_on);
+//                                stableImage.setImageResource(R.drawable.ic_mode_2_on);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_2_on).into(stableImage);
                                 stableText1.setTextColor(getResources().getColor(R.color.text_color_blue));
                                 stableText2.setTextColor(getResources().getColor(R.color.text_color_blue));
                             }
@@ -492,10 +499,12 @@ public class MainActivity extends BaseActivity implements NotifyListener {
                         }
                     });
                 }else {
-                    adaptiveImage.setImageResource(R.drawable.ic_mode_1_off);
+//                    adaptiveImage.setImageResource(R.drawable.ic_mode_1_off);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_1_off).into(adaptiveImage);
                     adaptiveText1.setTextColor(getResources().getColor(R.color.text_color_black));
                     adaptiveText2.setTextColor(getResources().getColor(R.color.text_color_black));
-                    stableImage.setImageResource(R.drawable.ic_mode_2_on);
+//                    stableImage.setImageResource(R.drawable.ic_mode_2_on);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_2_on).into(stableImage);
                     stableText1.setTextColor(getResources().getColor(R.color.text_color_blue));
                     stableText2.setTextColor(getResources().getColor(R.color.text_color_blue));
                 }
@@ -601,13 +610,16 @@ public class MainActivity extends BaseActivity implements NotifyListener {
                         @Override
                         public void onSuccess(byte[] object) {
                             if (object[4]==0x00){
-                                passthroughImage.setImageResource(R.drawable.ic_mode_3_on);
+//                                passthroughImage.setImageResource(R.drawable.ic_mode_3_on);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_3_on).into(passthroughImage);
                                 passthroughText1.setTextColor(getResources().getColor(R.color.text_color_blue));
                                 passthroughText2.setTextColor(getResources().getColor(R.color.text_color_blue));
-                                vocalImage.setImageResource(R.drawable.ic_mode_4_off);
+//                                vocalImage.setImageResource(R.drawable.ic_mode_4_off);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_4_off).into(vocalImage);
                                 vocalText1.setTextColor(getResources().getColor(R.color.text_color_black));
                                 vocalText2.setTextColor(getResources().getColor(R.color.text_color_black));
-                                customImage.setImageResource(R.drawable.ic_mode_5_off);
+//                                customImage.setImageResource(R.drawable.ic_mode_5_off);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_5_off).into(customImage);
                                 customText1.setTextColor(getResources().getColor(R.color.text_color_black));
                                 customText2.setTextColor(getResources().getColor(R.color.text_color_black));
                             }
@@ -620,13 +632,16 @@ public class MainActivity extends BaseActivity implements NotifyListener {
                     });
                 }else {
                     ambientMode = -2;
-                    passthroughImage.setImageResource(R.drawable.ic_mode_3_on);
+//                    passthroughImage.setImageResource(R.drawable.ic_mode_3_on);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_3_off).into(passthroughImage);
                     passthroughText1.setTextColor(getResources().getColor(R.color.text_color_blue));
                     passthroughText2.setTextColor(getResources().getColor(R.color.text_color_blue));
-                    vocalImage.setImageResource(R.drawable.ic_mode_4_off);
+//                    vocalImage.setImageResource(R.drawable.ic_mode_4_off);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_4_off).into(vocalImage);
                     vocalText1.setTextColor(getResources().getColor(R.color.text_color_black));
                     vocalText2.setTextColor(getResources().getColor(R.color.text_color_black));
-                    customImage.setImageResource(R.drawable.ic_mode_5_off);
+//                    customImage.setImageResource(R.drawable.ic_mode_5_off);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_5_off).into(customImage);
                     customText1.setTextColor(getResources().getColor(R.color.text_color_black));
                     customText2.setTextColor(getResources().getColor(R.color.text_color_black));
 
@@ -643,13 +658,16 @@ public class MainActivity extends BaseActivity implements NotifyListener {
                         @Override
                         public void onSuccess(byte[] object) {
                             if (object[4]==0x00){
-                                passthroughImage.setImageResource(R.drawable.ic_mode_3_off);
+//                                passthroughImage.setImageResource(R.drawable.ic_mode_3_off);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_3_off).into(passthroughImage);
                                 passthroughText1.setTextColor(getResources().getColor(R.color.text_color_black));
                                 passthroughText2.setTextColor(getResources().getColor(R.color.text_color_black));
-                                vocalImage.setImageResource(R.drawable.ic_mode_4_on);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_4_on).into(vocalImage);
+//                                vocalImage.setImageResource(R.drawable.ic_mode_4_on);
                                 vocalText1.setTextColor(getResources().getColor(R.color.text_color_blue));
                                 vocalText2.setTextColor(getResources().getColor(R.color.text_color_blue));
-                                customImage.setImageResource(R.drawable.ic_mode_5_off);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_5_off).into(customImage);
+//                                customImage.setImageResource(R.drawable.ic_mode_5_off);
                                 customText1.setTextColor(getResources().getColor(R.color.text_color_black));
                                 customText2.setTextColor(getResources().getColor(R.color.text_color_black));
                             }
@@ -661,13 +679,16 @@ public class MainActivity extends BaseActivity implements NotifyListener {
                         }
                     });
                 }else {
-                    passthroughImage.setImageResource(R.drawable.ic_mode_3_off);
+//                    passthroughImage.setImageResource(R.drawable.ic_mode_3_off);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_3_off).into(passthroughImage);
                     passthroughText1.setTextColor(getResources().getColor(R.color.text_color_black));
                     passthroughText2.setTextColor(getResources().getColor(R.color.text_color_black));
-                    vocalImage.setImageResource(R.drawable.ic_mode_4_on);
+//                    vocalImage.setImageResource(R.drawable.ic_mode_4_on);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_4_on).into(vocalImage);
                     vocalText1.setTextColor(getResources().getColor(R.color.text_color_blue));
                     vocalText2.setTextColor(getResources().getColor(R.color.text_color_blue));
-                    customImage.setImageResource(R.drawable.ic_mode_5_off);
+//                    customImage.setImageResource(R.drawable.ic_mode_5_off);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_5_off).into(customImage);
                     customText1.setTextColor(getResources().getColor(R.color.text_color_black));
                     customText2.setTextColor(getResources().getColor(R.color.text_color_black));
 
@@ -686,13 +707,16 @@ public class MainActivity extends BaseActivity implements NotifyListener {
                         @Override
                         public void onSuccess(byte[] object) {
                             if (object[4]==0x00){
-                                passthroughImage.setImageResource(R.drawable.ic_mode_3_off);
+//                                passthroughImage.setImageResource(R.drawable.ic_mode_3_off);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_3_off).into(passthroughImage);
                                 passthroughText1.setTextColor(getResources().getColor(R.color.text_color_black));
                                 passthroughText2.setTextColor(getResources().getColor(R.color.text_color_black));
-                                vocalImage.setImageResource(R.drawable.ic_mode_4_off);
+//                                vocalImage.setImageResource(R.drawable.ic_mode_4_off);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_4_off).into(vocalImage);
                                 vocalText1.setTextColor(getResources().getColor(R.color.text_color_black));
                                 vocalText2.setTextColor(getResources().getColor(R.color.text_color_black));
-                                customImage.setImageResource(R.drawable.ic_mode_5_on);
+//                                customImage.setImageResource(R.drawable.ic_mode_5_on);
+                                Glide.with(MainActivity.this).load(R.drawable.ic_mode_5_on).into(customImage);
                                 customText1.setTextColor(getResources().getColor(R.color.text_color_blue));
                                 customText2.setTextColor(getResources().getColor(R.color.text_color_blue));
                             }
@@ -706,13 +730,16 @@ public class MainActivity extends BaseActivity implements NotifyListener {
                 }else if (!isCheckAnc){
                     Toast.makeText(MainActivity.this,"You haven't added personal mode yet. Go to have a hearing test ",Toast.LENGTH_SHORT).show();
                 }else {
-                    passthroughImage.setImageResource(R.drawable.ic_mode_3_off);
+//                    passthroughImage.setImageResource(R.drawable.ic_mode_3_off);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_3_off).into(passthroughImage);
                     passthroughText1.setTextColor(getResources().getColor(R.color.text_color_black));
                     passthroughText2.setTextColor(getResources().getColor(R.color.text_color_black));
-                    vocalImage.setImageResource(R.drawable.ic_mode_4_off);
+//                    vocalImage.setImageResource(R.drawable.ic_mode_4_off);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_4_off).into(vocalImage);
                     vocalText1.setTextColor(getResources().getColor(R.color.text_color_black));
                     vocalText2.setTextColor(getResources().getColor(R.color.text_color_black));
-                    customImage.setImageResource(R.drawable.ic_mode_5_on);
+//                    customImage.setImageResource(R.drawable.ic_mode_5_on);
+                    Glide.with(MainActivity.this).load(R.drawable.ic_mode_5_on).into(customImage);
                     customText1.setTextColor(getResources().getColor(R.color.text_color_blue));
                     customText2.setTextColor(getResources().getColor(R.color.text_color_blue));
                     isCheckAnc = false;

@@ -56,4 +56,6 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.4'
     //屏幕适配
     implementation 'me.jessyan:autosize:1.1.2'
+    //导入Glide图片库
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
 }
